@@ -1,0 +1,18 @@
+.chip {
+  font-size: var(--text-xs);
+  font-weight: 700;
+
+  color: hsl(var(--bg), 8%);
+  background-color: hsl(var(--bg), 30%);
+  border-radius: 4px;
+  padding: 0.15rem 0.25rem;
+  width: fit-content;
+}
+
+.chip[data-chip-type="red"] {
+  background-color: rgb(185, 60, 60);
+}
+
+.chip[data-chip-type="green"] {
+  background-color: rgb(73, 208, 55);
+}

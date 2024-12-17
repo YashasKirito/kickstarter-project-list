@@ -1,0 +1,22 @@
+.nav_btn {
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: scale 100ms ease-in-out;
+  background-color: hsl(var(--bg), 30%);
+  color: hsl(var(--text-primary), 90%);
+}
+
+.nav_btn:disabled {
+  background-color: hsl(var(--bg), 10%);
+  cursor: not-allowed;
+}
+
+.nav_btn:not(:disabled):active {
+  scale: 0.9;
+}
+
+.nav_btn:not(:disabled):hover {
+  scale: 1.075;
+}

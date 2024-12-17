@@ -1,0 +1,43 @@
+.table_container {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid hsl(var(--bg), 20%);
+  border-spacing: 0px;
+  overflow: hidden;
+}
+
+.table_row.table_head {
+  text-align: left;
+  background-color: hsl(var(--bg), 12%);
+}
+
+.table_row.table_head > th {
+  padding: 0.75rem;
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.table_head > th,
+.table_row > td {
+  padding: 1rem;
+  border-right: 1px solid hsl(var(--bg), 20%);
+  border-bottom: 1px solid hsl(var(--bg), 20%);
+}
+
+.table_head > th:last-child,
+.table_row > td:last-child {
+  border-right: 0px;
+}
+
+.table_row:last-child > td {
+  border-bottom: 0px;
+}
+
+.table_row {
+  background-color: hsl(var(--bg), 9%);
+  transition: background-color 200ms ease-in-out;
+}
+
+.table_row:hover {
+  background-color: hsl(var(--bg), 12%);
+}
